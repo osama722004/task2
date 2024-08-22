@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digestive Age in Children</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+        padding: 0 20px;
+      }
+
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        max-width: 500px;
+      }
+
+      .logo {
+        position: absolute;
+        top: 8px;
+        left: 20px;
+        width: 150px; /* Adjust the size of your logo */
+        height: auto;
+      }
+
+      .container::before,
+      .container::after {
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background: linear-gradient(135deg, #ff416c, #ff4b2b);
+        border-radius: 50%;
+        z-index: -1;
+      }
+
+      .container::before {
+        top: -50px;
+        left: -50px;
+      }
+
+      .container::after {
+        bottom: -50px;
+        right: -50px;
+        background: linear-gradient(135deg, #7f00ff, #e100ff);
+      }
+
+      h1 {
+        color: #6a42f4;
+        font-size: 24px;
+        margin-top: 60px; /* Adjust to make space for logo */
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: #333;
+        font-size: 16px;
+        margin-bottom: 20px;
+        line-height: 1.6;
+      }
+
+      .button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 25px;
+        border: none;
+        background-color: #6a42f4;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .button:hover {
+        background-color: #5738c3;
+      }
+
+      .button .icon {
+        margin-left: 10px;
+        font-size: 18px;
+      }
+
+      .next-page {
+        margin-top: 20px;
+        background-color: #7f00ff;
+      }
+
+      .top-icons {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        gap: 10px;
+      }
+
+      .top-icons i {
+        font-size: 18px;
+        color: #333;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="WhatsApp Image 2024-08-22 at 3.00.44 AM.jpeg"
+        alt="Logo"
+        class="logo"
+      />
+      <!-- Update the src to the path of your logo -->
+      <h1>Digestive age in children?</h1>
+      <p>
+        Welcome to our dedicated section on indigestion issues related to dairy,
+        wheat, and legume intolerances in children aged from 1 month to 10
+        years. Understanding and managing these sensitivities early on is
+        crucial for your child's health and comfort. Whether your child is
+        dealing with lactose intolerance, gluten sensitivity, or a reaction to
+        legumes, our goal is to provide you with practical advice, nutritional
+        guidance, and support to ensure they lead a healthy and happy life.
+        Explore our resources to learn how to navigate these challenges
+        effectively.
+      </p>
+
+      <button
+        class="button"
+        onclick="window.location.href='allergy  to dairy.html'"
+      >
+        ALLERGY TO DAIRY <span class="icon">🔍</span>
+      </button>
+      <button class="button" onclick="window.location.href='p15.html'">
+        ALLERGY TO LEGUMES <span class="icon">🔍</span>
+      </button>
+      <button class="button" onclick="window.location.href='p10.html'">
+        ALLERGY TO WHEAT <span class="icon">🔍</span>
+      </button>
+
+      <button class="button next-page" onclick="redirectToNextPage()">
+        Go to next page
+      </button>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+      function redirectToNextPage() {
+        window.location.href = "https://www.facebook.com/";
+      }
+    </script>
+  </body>
+</html>
